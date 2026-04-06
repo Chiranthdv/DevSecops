@@ -1,0 +1,30 @@
+# Node modules
+node_modules/
+
+# Environment variables
+.env
+
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# Build folders
+dist/
+build/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# VS Code
+.vscode/
+
+# Frontend specific
+frontend/node_modules/
+
+# Backend specific
+backend/node_modules/
+
+# Uploads (optional - if you don’t want to push images)
+uploads/
