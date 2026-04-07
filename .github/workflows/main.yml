@@ -13,7 +13,6 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3
 
-      # Backend setup
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
@@ -24,12 +23,12 @@ jobs:
           cd backend
           npm install
 
-      - name: Run backend (test start)
+      - name: Run backend
         run: |
           cd backend
-          npm start & sleep 5
+          npm start &
+          sleep 5
 
-      # Frontend setup
       - name: Install frontend dependencies
         run: |
           cd frontend
